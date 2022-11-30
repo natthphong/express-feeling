@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> baseHead}}
+
+<body>
+    {{> siteHeader}}
+    <div class="main">
+        <h2>สวัสดีฟีลแฟน</h2>
+        <p>วันนีคุณมีอะไรจะมาฝากถาม ...</p>
+
+
+
+        <div class="container">
+            {{#each allpost}}
+            
+            <div class="box" onclick="location.href = '/p/{{this.id}}'" >
+                <h4>
+                    <a href="/p/{{this.id}}">{{ this.title }}</a>
+                </h4>
+                <p>
+                    <span> {{this.from}} | </span>
+                    <span>{{this.createdAtText}}</span>
+
+
+                </p>
+                {{#if this.commentCount}}
+                <p>{{this.commentCount}} คอมเม้นท์</p>
+                {{else}}
+                <p>ยังไม่มีคอมเม้นท์นะ มาเปิดกันได้</p>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+      
+        {{> button}}
+          <script src="../../config/top.js"></script>
+    {{> siteFooter}}
+</body>
+
+</html>

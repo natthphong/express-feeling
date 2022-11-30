@@ -1,0 +1,10 @@
+.headPost h2{
+    font-weight: 900;
+    margin: 8px;
+}
+hr{
+    border: 1px dashed #cccccc;
+    margin: 24px 0px;
+    overflow: visible;
+    box-sizing: content-box;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> baseHead customTitle='createNewPost|'}}
+
+<body>
+        {{> siteHeader}}
+        <div class="main">
+        <div class="f">
+                <h2>สร้างโพสต์ใหม่</h2>
+                <p>ฝากถามเพื่อนๆได้เลย</p>
+
+                <form action="/p/new" method="post">
+
+                        <p>
+                        <input type="text" name="title" id="" class="inText" placeholder="หัวข้อ" value="{{value.title}}">
+                                </p>
+                        <p>
+                                <textarea name="content" id="" rows="3" class="inText"placeholder="conttent">{{value.content}}</textarea>
+                        </p>
+                        <p>
+                                <input type="text" name="from" class="inText"placeholder="จากคุณ" value="{{value.from}}">
+                        </p>
+
+                        <p>
+                                <input type="checkbox" name="accepted" id="input-accepted">
+                                <label for="input-accepted">ข้อความยาวๆที่หลายคนเคยเจอ อาจไม่ต้องอ่านก็ได้ แค่ยอมรับและเข้าใจก็พอ</label>
+                        </p>
+                        <p>
+                                <button type="submit">สร้างโพสต์</button>
+                        </p>
+
+                        {{#if errormessage}}
+                        <p>
+                                {{errormessage}}
+                        </p>
+                        {{/if}}
+
+                </form>
+        </div>
+        </div>
+         {{> button}}
+          <script src="../../config/top.js"></script>
+        {{> siteFooter}}
+</body>
+
+</html>

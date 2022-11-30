@@ -1,0 +1,100 @@
+.buttonhearder{
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid grey;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    right: 10px;
+    bottom: 10px;
+}
+
+html{
+    color: #333333;
+    font-family: 'Mali', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* contentmainconf */
+body{
+
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;
+}
+
+.main{
+    padding: 0% 30%;
+    flex: 1;
+  
+}
+.box{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid rgb(160, 160, 160);
+    background-color: white;
+}
+
+.box h4{
+  
+    margin: 8px;
+}
+.box h4 a{ 
+    color: rgb(6, 169, 6);
+}
+.box p{
+    margin: 8px;
+}
+
+/* headerconfig */
+header a{
+    text-decoration: none;
+    color: black;
+}
+header{
+
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+.start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#textstart{
+    padding-left: 10px;
+}
+#end{
+    border-radius: 8%;
+    color:  rgb(6, 169, 6);
+    border: 1px solid rgb(6, 169, 6);
+    padding: 6px;
+    margin-left: auto;
+}
+
+
+
+/* footerconfig */
+
+footer{
+    margin-top: auto;
+    border-top: 1px solid rgb(160, 160, 160);
+    text-align: center;
+ 
+}

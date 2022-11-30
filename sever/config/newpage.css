@@ -1,0 +1,50 @@
+
+
+
+.f h2{
+    margin-bottom: 0px;
+}
+.f p{
+    opacity: 0.8;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.f p button{
+    font-size: 16px;
+    padding: 8px 10px;
+    background-color: rgb(18, 190, 18);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.inText{
+    box-sizing: border-box;
+    overflow: auto;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/* postDone */
+
+
+.btn{
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(7, 183, 7);
+    font-size: 16px;
+    margin-top: 0px;
+    padding: 8px;
+    border-radius: 8px;
+}
